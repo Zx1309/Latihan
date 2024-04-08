@@ -22,7 +22,6 @@ def waktu(min, sc):
     total_second = min * 60 + sc
     while total_second:
         mins, secs = divmod(total_second, 60)
-        print(f'\r[*] delay 00:{mins:02d}:{secs:02d} detik', end='')
         time.sleep(1)
         total_second -= 1
 
