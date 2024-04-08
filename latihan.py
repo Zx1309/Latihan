@@ -4,6 +4,19 @@ except: pass
 if sys.platform.lower() == "win": os.system("cls")
 else: os.system("clear")
 
+# --- [ IMPORT MODULE ] --- #
+import requests, re, time, os, random, base64, sys
+from random import randint as rr
+from random import choice as rc
+ses = requests.Session()
+no = 0
+
+# --- [ CLEAR TERMINAL ] --- #
+try: os.system("git pull")
+except: pass
+if sys.platform.lower() == "win": os.system("cls")
+else: os.system("clear")
+	
 # --- [ UNTUK DELAY ] --- #
 def waktu(min, sc):
     total_second = min * 60 + sc
